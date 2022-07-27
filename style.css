@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Palanquin', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    background: #EFF1FF 
+}
+header{
+    height: 27.9rem;
+    width: 38.4rem;
+    text-align: center;
+    background: #8E9AAF;
+}
+header img{
+    margin: 3.2rem 0;
+}
+header h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-align: center;
+    background: #CBC0D3;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.page{
+    height: 27.9rem;
+    width: 38.4rem;
+    margin: auto;
+    background: blue;
+}
+main{
+    display: grid;
+    gap: 3.2rem;
+    background: blue;
+    padding: 32px;
+}
+.card{
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+}
+.card p{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #23053A;
+    margin-top: 1.4rem;
+    margin-bottom: 6.3rem;
+}
+.card img{
+    height: 25.0rem;
+    width: 32.0rem;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
