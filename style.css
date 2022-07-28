@@ -13,9 +13,8 @@ body{
     background: #87b091;
 }
 .page{
-    height: 27.9rem;
-    width: 38.4rem;
-    margin: auto;
+    max-width: 38.4rem;
+    margin: 0 auto;
 }
 header{
     height: 27.9rem;
@@ -41,13 +40,16 @@ main{
     gap: 3.2rem;
     padding: 32px;
     background: #bfcff7;
+   /* grid-template-areas: "A B" "C D";
+    */
 }
 .card{
+    width: 32.0rem;
     border-radius: 20px;
     margin: auto;
     position: relative;
 }
-.card p{
+main p{
     font-family: 'Palanquin', sans-serif;
     font-size: 2rem;
     line-height: 3rem;
@@ -56,10 +58,14 @@ main{
     margin-top: 1.4rem;
     margin-bottom: 6.3rem;
 }
+main img{
+    width: 100%;
+    height: auto;
+}
 .card img{
     border-radius: 20px;
+    height: 25.0rem;
     object-fit: cover;
-    width: 100%;
     animation: downtop 700ms 250ms reverse backwards;
 }
 .card img:hover{
@@ -88,11 +94,22 @@ main{
 }
 /* @media (min-width: 700px){
     .page{
-        width: 117rem;
+        max-width: 128.0rem;
+        display: flex;
+        margin: 0;
    }
 }
 @media (min-width: 700px){
-    main{
+    main p{
+        max-width: 27.5rem;
+        max-height: 26.2 
+   }
+}
+@media (min-width: 700px){
+    .box-left{
+        width: 37.7rem;
+        height: 72.0rem;
+        margin: 0;
    }
 }
 */
