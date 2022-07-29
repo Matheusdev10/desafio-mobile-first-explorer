@@ -11,6 +11,8 @@ body {
   font-family: 'Staatliches', cursive;
   font-size: 1.6rem;
   background: #87b091;
+  width: 100vw;
+  height: 100vh;
 }
 .page {
   max-width: 38.4rem;
@@ -43,8 +45,6 @@ main {
   gap: 3.2rem;
   padding: 1.4rem 3.2rem 6rem 3.2rem;
   background: #bfcff7;
-  /* grid-template-areas: "A B" "C D";
-    */
 }
 .card {
   width: 32rem;
@@ -91,62 +91,45 @@ main img {
 }
 @keyframes downtop {
   100% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
+      opacity: 0;
+      transform: translateY(15px);
+ }
 }
-
-@media (min-width: 700px) {
+@media (min-width: 700px){
+  .page{
+      max-width: 100%;
+      display: flex;
+ }
+  header{
+      height: 82rem;
+      width: 37.7rem;
+      background: #939fa0;
+ }
   header p {
-    visibility: visible;
-    font-family: Roboto;
-    font-size: 2.4rem;
-    line-height: 2rem;
-    text-align: center;
-    height: 26.2rem;
-    width: 27.5rem;
-    margin: 5.2rem 4.8rem 12.5rem 5.4rem;
-  }
-  body {
-    max-height: 72rem;
-    width: 128rem;
-  }
-
-  .page {
-    margin: 0;
-    display: flex;
-  }
-  main p {
-    visibility: hidden;
-  }
-  header {
-    height: 100%;
-    width: 37.7rem;
-  }
-  main {
-    grid-template-areas:
-      'A B'
-      'C D';
-  }
+      visibility: visible;
+      font-family: Roboto;
+      font-size: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      height: 26.2rem;
+      width: 27.5rem;
+      margin: 5.2rem 4.8rem 12.5rem 5.4rem;
+      color: #ffffff;
+ }
+  main p{
+      display: none;
+ }
+  body{
+      background: #ffffff;
+ }
+  main{
+      background-color: #c1d4e0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+ }
+  .card{
+      margin-left:9.8rem;
+      display: flex;
+ }
 }
-/* @media (min-width: 700px){
-    .page{
-        max-width: 128.0rem;
-        display: flex;
-        margin: 0;
-   }
-}
-@media (min-width: 700px){
-    main p{
-        max-width: 27.5rem;
-        max-height: 26.2 
-   }
-}
-@media (min-width: 700px){
-    .box-left{
-        width: 37.7rem;
-        height: 72.0rem;
-        margin: 0;
-   }
-}
-*/
